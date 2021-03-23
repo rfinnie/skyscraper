@@ -23,6 +23,7 @@ As Skyscraper was built to be used with RetroPie, the list of supported platform
 * Dragon 32/64
 * Dreamcast
 * Emerson Arcadia 2001
+* Fairchild Channel F
 * Famicom Disk System
 * FB Neo (formerly FB Alpha)
 * Game Boy
@@ -68,6 +69,7 @@ As Skyscraper was built to be used with RetroPie, the list of supported platform
 * Vectrex
 * Videopac (Oddysey 2)
 * Virtual Boy
+* VTech CreatiVision
 * Wii
 * Wii U
 * WonderSwan

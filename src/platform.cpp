@@ -60,8 +60,10 @@ QStringList Platform::getPlatforms()
   platforms.append("c16");
   platforms.append("c64");
   platforms.append("c128");
+  platforms.append("channelf");
   platforms.append("coco");
   platforms.append("coleco");
+  platforms.append("crvision");
   platforms.append("daphne");
   platforms.append("dragon32");
   platforms.append("dreamcast");
@@ -171,9 +173,13 @@ QStringList Platform::getScrapers(QString platform)
     scrapers.append("screenscraper");
   } else if(platform == "c128") {
     scrapers.append("screenscraper");
+  } else if(platform == "channelf") {
+    scrapers.append("screenscraper");
   } else if(platform == "coco") {
     scrapers.append("screenscraper");
   } else if(platform == "coleco") {
+    scrapers.append("screenscraper");
+  } else if(platform == "crvision") {
     scrapers.append("screenscraper");
   } else if(platform == "daphne") {
     scrapers.append("screenscraper");
@@ -367,10 +373,14 @@ QString Platform::getFormats(QString platform, QString extensions, QString addEx
     formats.append("*.crt *.d64 *.prg *.tap *.t64 *.g64 *.x64 *.vsf");
   } else if(platform == "c128") {
     formats.append("*.crt *.d64 *.prg *.tap *.t64 *.g64 *.x64 *.vsf");
+  } else if(platform == "channelf") {
+    formats.append("*.bin");
   } else if(platform == "coco") {
     formats.append("*.cas *.wav *.bas *.asc *.dmk *.jvc *.os9 *.dsk *.vdk *.rom *.ccc *.sna");
   } else if(platform == "coleco") {
     formats.append("*.bin *.col *.rom");
+  } else if(platform == "crvision") {
+    formats.append("*.rom");
   } else if(platform == "daphne") {
     formats.append("*.daphne");
   } else if(platform == "dragon32") {
@@ -537,9 +547,13 @@ QString Platform::getDefaultScraper(QString platform)
     scraper = "cache";
   } else if(platform == "c128") {
     scraper = "cache";
+  } else if(platform == "channelf") {
+    scraper = "cache";
   } else if(platform == "coco") {
     scraper = "cache";
   } else if(platform == "coleco") {
+    scraper = "cache";
+  } else if(platform == "crvision") {
     scraper = "cache";
   } else if(platform == "daphne") {
     scraper = "cache";
@@ -804,11 +818,17 @@ QStringList Platform::getAliases(QString platform)
     aliases.append("amiga cd32 (hack)");
   } else if(platform == "cdtv") {
     aliases.append("amiga cdtv");
+  } else if(platform == "channelf") {
+    aliases.append("channel f");
+    aliases.append("fairchild channel f");
   } else if(platform == "coco") {
     aliases.append("trs-80 color computer");
     aliases.append("trs-80 coco");
   } else if(platform == "coleco") {
     aliases.append("colecovision");
+  } else if(platform == "crvision") {
+    aliases.append("creativision");
+    aliases.append("vtech creativision");
   } else if(platform == "daphne") {
     aliases.append("pioneer laseractive");
     aliases.append("laseractive");

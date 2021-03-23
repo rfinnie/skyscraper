@@ -427,10 +427,14 @@ QString MobyGames::getPlatformId(const QString platform)
     return "27";
   } else if(platform == "c128") {
     return "61";
+  } else if(platform == "channelf") {
+    return "76";
   } else if(platform == "coco") {
     return "62";
   } else if(platform == "coleco") {
     return "29";
+  } else if(platform == "crvision") {
+    return "212";
   } else if(platform == "daphne") {
     return "na";
   } else if(platform == "dragon32") {

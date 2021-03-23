@@ -669,10 +669,14 @@ QString ScreenScraper::getPlatformId(const QString platform)
     return "66";
   } else if(platform == "c128") {
     return "na";
+  } else if(platform == "channelf") {
+    return "80";
   } else if(platform == "coco") {
     return "144";
   } else if(platform == "coleco") {
     return "48";
+  } else if(platform == "crvision") {
+    return "241";
   } else if(platform == "daphne") {
     return "49";
   } else if(platform == "dragon32") {
